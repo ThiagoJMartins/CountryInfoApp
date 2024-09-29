@@ -1,0 +1,51 @@
+/* CountryList.css */
+
+.country-list {
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 20px; /* Añadir espacio superior */
+}
+
+.country-list h2 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.country-list ul {
+	display: grid; /* Utilizar grid para el layout */
+	grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+	gap: 10px; /* Espacio entre los elementos */
+	list-style-type: none;
+	padding: 0;
+}
+
+.country-list li {
+	padding: 10px;
+	background-color: #e9ecef;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	text-decoration: none;
+	color: #333;
+}
+
+.country-list li:hover {
+	background-color: #d6d9db;
+}
+
+.country-list li a {
+	color: #333;
+	font-weight: bold;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+	.country-list ul {
+		grid-template-columns: repeat(
+			2,
+			1fr
+		); /* Una columna en pantallas pequeñas */
+	}
+}

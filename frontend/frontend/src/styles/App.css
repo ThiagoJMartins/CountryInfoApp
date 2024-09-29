@@ -1,0 +1,87 @@
+/* app.css */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f2f5;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	display: flex;
+	justify-content: center; /* Centrar el contenido horizontalmente */
+	align-items: center; /* Centrar el contenido verticalmente */
+	min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Enlaces */
+a {
+	text-decoration: none;
+	color: #007bff;
+	transition: color 0.3s;
+}
+
+a:hover {
+	color: #0056b3;
+}
+
+/* Botones */
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+/* app.css */
+
+/* (mantén el código anterior) */
+
+.container {
+	max-width: 1200px; /* Máximo ancho del contenedor */
+	width: 100%; /* Ancho completo hasta el máximo */
+	padding: 20px;
+	margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Asegúrate de que los títulos sean responsivos */
+h1,
+h2,
+h3 {
+	margin: 0;
+	text-align: center; /* Centrar los títulos */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+	.country-list ul {
+		grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+	}
+
+	.country-info {
+		padding: 10px; /* Reducir el padding */
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		padding: 10px; /* Reducir padding en pantallas muy pequeñas */
+	}
+
+	h1 {
+		font-size: 1.8rem; /* Ajustar tamaño de fuente para el título */
+	}
+
+	h2 {
+		font-size: 1.5rem; /* Ajustar tamaño de fuente para subtítulos */
+	}
+}
